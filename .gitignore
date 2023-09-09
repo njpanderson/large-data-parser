@@ -1,0 +1,4 @@
+/node_modules
+/src/config.js
+/collated-data.csv
+*.csv
