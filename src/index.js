@@ -4,6 +4,7 @@ const path = require('path');
 const { Worker } = require('node:worker_threads');
 
 const app = express();
+const portNumber = 3000;
 
 app.get('/', async (req, res) => {
 	fs.readFile(path.join('public', 'index.html'), (err, file) => {
@@ -24,4 +25,6 @@ app.post('/generate', async (req, res) => {
 		});
 });
 
-app.use(express.static('public')).listen(3000);
+app.use(express.static('public')).listen(portNumber);
+
+console.log(`Parser interface loaded at http://localhost:${portNumber}/`);
