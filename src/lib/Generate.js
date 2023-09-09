@@ -56,7 +56,7 @@ class Generate {
 			// Run parseDoc for each "document"
 			const parseDoc = () => {
 				// Number of "rows" within the document
-				const rowCount = random(500000, 1250000);
+				const rowCount = random(750000, 1250000);
 				const doc = { id: currentDocId, length: rowCount, errorCount: 0 };
 
 				this.logger.write(`Generate#go - Parsing ${rowCount} items from doc ${currentDocId}`);
