@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "node src/index.js",
+    "generate": "node src/generate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
